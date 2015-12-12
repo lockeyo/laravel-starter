@@ -1,0 +1,5 @@
+{
+  "directory": "resources/vendor",
+  "analytics": false,
+  "timeout": 120000
+}

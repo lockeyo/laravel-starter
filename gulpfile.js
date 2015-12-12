@@ -1,16 +1,35 @@
+var gulp = require('gulp');
 var elixir = require('laravel-elixir');
 
-/*
- |--------------------------------------------------------------------------
- | Elixir Asset Management
- |--------------------------------------------------------------------------
- |
- | Elixir provides a clean, fluent API for defining some basic Gulp tasks
- | for your Laravel application. By default, we are compiling the Sass
- | file for our application, as well as publishing vendor resources.
- |
- */
+var paths = {
+ 'jquery': 'vendor/jquery/dist',
+ 'bootstrap': 'vendor/bootstrap/dist',
+ 'fontawesome': 'vendor/font-awesome'
+};
+
+elixir.config.sourcemaps = false;
 
 elixir(function(mix) {
-    mix.sass('app.scss');
+ // Copy fonts straight to public
+ mix.copy('resources/' + paths.bootstrap + '/fonts/bootstrap/**', 'public/fonts');
+ mix.copy('resources/' + paths.fontawesome + '/fonts/**', 'public/fonts');
+ mix.copy('resources/assets/fonts/**', 'public/fonts');
+
+ // Copy images straight to public
+ mix.copy('resources/assets/images/**', 'public/images');
+
+ // Merge Site CSSs.
+ mix.styles([
+  '../../' + paths.bootstrap + '/css/bootstrap.css',
+  '../../' + paths.fontawesome + '/css/font-awesome.css',
+  'style.css',
+ ], 'public/css/site.css');
+
+ // Merge Site scripts.
+ mix.scripts([
+  'jquery-2.1.4.min.js',
+  '../../' + paths.bootstrap + '/js/bootstrap.js',
+  'scripts.js'
+ ], 'public/js/site.js');
+
 });

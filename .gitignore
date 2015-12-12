@@ -1,7 +1,9 @@
 /vendor
 /node_modules
 /storage
+/public/css
+/public/js
+/public/fonts
 /.idea
-/bower_components
-Homestead.yaml
-Homestead.json
+/resources/vendor
+.env

@@ -1,7 +1,7 @@
 {
     "name": "laravel/laravel",
-    "description": "The Laravel Framework.",
-    "keywords": ["framework", "laravel"],
+    "description": "Laravel Starter",
+    "keywords": ["Laravel Starter", "laravel", "Bootstrap", "jQuery", "Laravel 5"],
     "license": "MIT",
     "type": "project",
     "require": {

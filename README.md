@@ -4,12 +4,24 @@
 
 To be done.
 
+## Installation
+
+* run 'composer install'
+* run 'php artisan key:generate'
+* edit '.env'-file
+* run 'php artisan migrate'
+* run 'php artisan db:seed'
+* run 'npm install'
+* run 'bower install'
+* run 'gulp'
+
 ## Description
 Laravel Starter is based on Laravel, jQuery and Bootstrap. The Starter is made to make the live of laravel developers more enjoyable. Feel free to send feedback.
 
+
 ## Contributing
 
-Thank you for considering contributing to the Laravel Starter! Just open an pull-request.
+Thank you for considering contributing to the Laravel Starter! Just open an pull-request. Thanks!
 
 ## Security Vulnerabilities
 
