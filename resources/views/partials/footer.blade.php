@@ -13,6 +13,9 @@
 
     <div class="container">
         <p class="footer-links pull-right">
+            <a href="{{ url('jobs')  }}">Jobs</a>|
+            <a href="{{ url('press')  }}">Press</a>|
+            <a href="{{ url('support')  }}">Support</a>|
             <a href="{{ url('sitemap')  }}">Sitemap</a>|
             <a href="{{ url('privacy-policy')  }}">Privacy Policy</a>|
             <a href="{{ url('terms-of-service')  }}">Terms of service</a>|
