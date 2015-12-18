@@ -23,6 +23,7 @@ elixir(function(mix) {
   '../../' + paths.bootstrap + '/css/bootstrap.css',
   '../../' + paths.fontawesome + '/css/font-awesome.css',
   'style.css',
+  'footer.css'
  ], 'public/css/site.css');
 
  // Merge Site scripts.
