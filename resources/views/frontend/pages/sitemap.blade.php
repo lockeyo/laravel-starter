@@ -12,7 +12,7 @@
 <!-- Content -->
 @section('content')
     <div class="container">
-        <h1>Sitemao</h1>
+        <h1>Sitemap</h1>
     </div>
 @endsection
 
