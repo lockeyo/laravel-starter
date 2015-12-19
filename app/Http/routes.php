@@ -84,4 +84,6 @@ Route::get('/rss', 'RssController@index');
 | API Routes
 |--------------------------------------------------------------------------
 */
-Route::get('/api/v1/', 'ApiController@index');
+Route::get('/api', 'ApiController@index');
+Route::get('/api/{version}', 'ApiController@version');
+Route::get('/api/{version}/test', 'ApiController@test');
