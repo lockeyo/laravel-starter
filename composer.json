@@ -4,7 +4,7 @@
     "keywords": ["Laravel Starter", "laravel", "Bootstrap", "jQuery", "Laravel 5"],
     "license": "MIT",
     "type": "project",
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "require": {
         "php": ">=5.5.9",
         "laravel/framework": "5.1.*",
