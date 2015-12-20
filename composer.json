@@ -1,5 +1,5 @@
 {
-    "name": "laravel/laravel",
+    "name": "lockeyo/laravel-starter",
     "description": "Laravel Starter",
     "keywords": ["Laravel Starter", "laravel", "Bootstrap", "jQuery", "Laravel 5"],
     "license": "MIT",
