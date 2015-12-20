@@ -14,29 +14,29 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
                 <li class="{{ (Request::is('/') ? 'active' : '') }}">
-                    <a href="{{ URL::to('') }}">Home</a>
+                    <a href="{{ URL::to('') }}">{{ Lang::get('header-nav.home') }}</a>
                 </li>
                 <li class="{{ (Request::is('features') ? 'active' : '') }}">
-                    <a href="{{ URL::to('features') }}">Features</a>
+                    <a href="{{ URL::to('features') }}">{{ Lang::get('header-nav.features') }}</a>
                 </li>
                 <li class="{{ (Request::is('about') ? 'active' : '') }}">
-                    <a href="{{ URL::to('about') }}">About</a>
+                    <a href="{{ URL::to('about') }}">{{ Lang::get('header-nav.about') }}</a>
                 </li>
                 <li class="{{ (Request::is('blog') ? 'active' : '') }}">
-                    <a href="{{ URL::to('blog') }}">Blog</a>
+                    <a href="{{ URL::to('blog') }}">{{ Lang::get('header-nav.blog') }}</a>
                 </li>
                 <li class="{{ (Request::is('contact') ? 'active' : '') }}">
-                    <a href="{{ URL::to('contact') }}">Contact</a>
+                    <a href="{{ URL::to('contact') }}">{{ Lang::get('header-nav.contact') }}</a>
                 </li>
 
             </ul>
 
             <ul class="nav navbar-nav navbar-right">
                 <li class="{{ (Request::is('auth/register/') ? 'active' : '') }}">
-                    <a href="{{ URL::to('auth/register/') }}">Join</a>
+                    <a href="{{ URL::to('auth/register/') }}">{{ Lang::get('header-nav.join') }}</a>
                 </li>
                 <li class="{{ (Request::is('auth/login/') ? 'active' : '') }}">
-                    <a href="{{ URL::to('auth/login/') }}">Login</a>
+                    <a href="{{ URL::to('auth/login/') }}">{{ Lang::get('header-nav.login') }}</a>
                 </li>
             </ul>
         </div>

@@ -2,10 +2,10 @@
     <div id="footer-newsletter">
         <div class="container">
             <p>
-                Get our Newsletter:
+                {{ Lang::get('footer.newsletter_text') }}:
                 <form action="" method="post">
-                    <input type="text" class="form-control form-footer-newsletter" placeholder="Your E-Mail adress" />
-                    <input type="submit" value="Subscribe" name="subscribe" id="footer-newsletter-subscribe" class="btn btn-success">
+                    <input type="text" class="form-control form-footer-newsletter" placeholder="{{ Lang::get('footer.newsletter_email_placeholder') }}" />
+                    <input type="submit" value="{{ Lang::get('footer.newsletter_submit_text') }}" name="subscribe" id="footer-newsletter-subscribe" class="btn btn-success">
                 </form>
             </p>
         </div>
@@ -13,13 +13,13 @@
 
     <div class="container">
         <p class="footer-links pull-right">
-            <a href="{{ url('jobs')  }}">Jobs</a>|
-            <a href="{{ url('press')  }}">Press</a>|
-            <a href="{{ url('support')  }}">Support</a>|
-            <a href="{{ url('sitemap')  }}">Sitemap</a>|
-            <a href="{{ url('privacy-policy')  }}">Privacy Policy</a>|
-            <a href="{{ url('terms-of-service')  }}">Terms of service</a>|
-            <a href="{{ url('imprint')  }}">Imprint</a>
+            <a href="{{ url('jobs')  }}">{{ Lang::get('footer.jobs') }}</a>|
+            <a href="{{ url('press')  }}">{{ Lang::get('footer.press') }}</a>|
+            <a href="{{ url('support')  }}">{{ Lang::get('footer.support') }}</a>|
+            <a href="{{ url('sitemap')  }}">{{ Lang::get('footer.sitemap') }}</a>|
+            <a href="{{ url('privacy-policy')  }}">{{ Lang::get('footer.privacy_policy') }}</a>|
+            <a href="{{ url('terms-of-service')  }}">{{ Lang::get('footer.terms_of_service') }}</a>|
+            <a href="{{ url('imprint')  }}">{{ Lang::get('footer.imprint') }}</a>
         </p>
     </div>
 </footer>

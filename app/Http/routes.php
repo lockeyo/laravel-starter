@@ -36,6 +36,8 @@ Route::get('/privacy-policy', 'PageController@privacyPolicy');
 Route::get('/terms-of-service', 'PageController@termsOfService');
 Route::get('/imprint', 'PageController@imprint');
 
+Route::get('/language/change/{locale}', 'LanguageController@change');
+
 /*
 |--------------------------------------------------------------------------
 |  Report Bugs

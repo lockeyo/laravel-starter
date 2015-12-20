@@ -13,6 +13,8 @@
 @section('content')
     <div class="container">
         <h1>Home</h1>
+
+        {{ Lang::get('home.welcome') }}
     </div>
 @endsection
 
