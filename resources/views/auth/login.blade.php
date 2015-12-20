@@ -1,14 +1,20 @@
+<!-- Template -->
 @extends('templates.default')
 
-{{-- Web site Title --}}
-@section('title') {!!  trans('site/user.login') !!} :: @parent @stop
+<!-- Name of the page -->
+@section('title') Login @endsection
 
-{{-- Content --}}
+<!-- Meta-Tags for the page -->
+@section('meta')
+
+@endsection
+
+<!-- Content -->
 @section('content')
     <div class="container">
         <div class="row">
             <div class="page-header">
-                <h2>{!! trans('site/user.login_to_account') !!}</h2>
+                <h2>Login</h2>
             </div>
         </div>
 

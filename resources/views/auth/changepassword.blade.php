@@ -1,12 +1,20 @@
+<!-- Template -->
 @extends('templates.default')
-	@section('title') {!! trans('site/user.change_password') !!} :: @parent
-@stop
-{{-- Content --}}
+
+<!-- Name of the page -->
+@section('title') Change password @endsection
+
+<!-- Meta-Tags for the page -->
+@section('meta')
+
+@endsection
+
+<!-- Content -->
 @section('content')
 
     <div class="container">
         <div class="page-header">
-            <h1>{!! trans('site/user.change_password') !!}</h1>
+            <h1>Change password</h1>
         </div>
         {!! Form::open(array('url' => URL::to('auth/changepassword'), 'method' => 'post', 'files'=> true)) !!}
         <fieldset>
@@ -31,4 +39,4 @@
         </fieldset>
         {!! Form::close() !!}
     </div>
-@stop
+@endsection

@@ -1,5 +1,15 @@
+<!-- Template -->
 @extends('templates.default')
 
+<!-- Name of the page -->
+@section('title') Reset password @endsection
+
+<!-- Meta-Tags for the page -->
+@section('meta')
+
+@endsection
+
+<!-- Content -->
 @section('content')
     <div class="container-fluid">
         <div class="row">
