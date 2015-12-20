@@ -11,9 +11,29 @@
 
 <!-- Content -->
 @section('content')
-    <div class="container">
-        <h1>Blog articles</h1>
+
+    <div class="jumbotron">
+        <div class="container">
+            <h1>Blog articles</h1>
+        </div>
     </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <ul>
+                    <li><a href="#">Product news</a></li>
+                    <li><a href="#">User stories</a></li>
+                    <li><a href="#">Tipps and Tricks</a></li>
+                    <li><a href="#">Archiv</a></li>
+                </ul>
+            </div>
+            <div class="col-md-9">
+                Content
+            </div>
+        </div>
+    </div>
+
 @endsection
 
 <!-- Scripts -->
