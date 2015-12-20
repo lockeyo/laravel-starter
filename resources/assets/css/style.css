@@ -1,0 +1,11 @@
+.navbar {
+    margin-bottom: 0;
+}
+
+#newsletter-header{
+    margin: 0;
+}
+
+#newsletter-header .pull-right{
+    padding: 30px 0 0 0;
+}
