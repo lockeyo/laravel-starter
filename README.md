@@ -2,10 +2,15 @@
 
 ## Official Documentation
 
-To be done.
+To be done ...
+
+## Laravel Documentation
+
+http://laravel.com/docs/5.1
 
 ## Installation
 
+* run 'composer create-project --dev lockeyo/laravel-starter'
 * run 'composer install'
 * run 'php artisan key:generate'
 * edit '.env'-file
@@ -17,7 +22,6 @@ To be done.
 
 ## Description
 Laravel Starter is based on Laravel, jQuery and Bootstrap. The Starter is made to make the live of laravel developers more enjoyable. Feel free to send feedback.
-
 
 ## Contributing
 

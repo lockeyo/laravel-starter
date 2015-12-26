@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "a1f81ecc6cbcdccd34b5418c9bd7361a",
-    "content-hash": "5d22a10ef0e9bc3fa61e71aa29b24879",
+    "hash": "74aac7f2663055218c8a2fc2a6417320",
+    "content-hash": "0795350d1a852043b129e353127f740c",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -1000,6 +1000,54 @@
                 "shell"
             ],
             "time": "2015-11-12 16:18:56"
+        },
+        {
+            "name": "roumen/sitemap",
+            "version": "v2.5.8",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/RoumenDamianoff/laravel-sitemap.git",
+                "reference": "637e094b2f5e1e56389845dcd3f0e8db4c2f05d9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/RoumenDamianoff/laravel-sitemap/zipball/637e094b2f5e1e56389845dcd3f0e8db4c2f05d9",
+                "reference": "637e094b2f5e1e56389845dcd3f0e8db4c2f05d9",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "~5",
+                "php": ">=5.5.9"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "3.7.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Roumen\\Sitemap": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Roumen Damianoff",
+                    "email": "roumen@dawebs.com",
+                    "homepage": "https://roumen.it",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A simple sitemap generator for Laravel.",
+            "homepage": "https://roumen.it/projects/laravel-sitemap",
+            "keywords": [
+                "Sitemap",
+                "generator",
+                "laravel"
+            ],
+            "time": "2015-12-17 17:30:38"
         },
         {
             "name": "swiftmailer/swiftmailer",
