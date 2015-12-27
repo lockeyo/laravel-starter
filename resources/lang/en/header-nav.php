@@ -7,5 +7,6 @@ return array(
     'blog' => 'Blog',
     'contact' => 'Contact',
     'join' => 'Join',
-    'login' => 'Login'
+    'login' => 'Login',
+    'dashboard' => 'Dashboard'
 );

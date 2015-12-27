@@ -31,14 +31,23 @@
 
             </ul>
 
-            <ul class="nav navbar-nav navbar-right">
-                <li class="{{ (Request::is('auth/register/') ? 'active' : '') }}">
-                    <a href="{{ URL::to('auth/register/') }}">{{ Lang::get('header-nav.join') }}</a>
-                </li>
-                <li class="{{ (Request::is('auth/login/') ? 'active' : '') }}">
-                    <a href="{{ URL::to('auth/login/') }}">{{ Lang::get('header-nav.login') }}</a>
-                </li>
-            </ul>
+            @if(!Auth::check())
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="{{ (Request::is('auth/register/') ? 'active' : '') }}">
+                        <a href="{{ URL::to('auth/register/') }}">{{ Lang::get('header-nav.join') }}</a>
+                    </li>
+                    <li class="{{ (Request::is('auth/login/') ? 'active' : '') }}">
+                        <a href="{{ URL::to('auth/login/') }}">{{ Lang::get('header-nav.login') }}</a>
+                    </li>
+                </ul>
+            @else
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="{{ (Request::is('dashboard') ? 'active' : '') }}">
+                        <a href="{{ URL::to('dashboard') }}">{{ Lang::get('header-nav.dashboard') }}</a>
+                    </li>
+
+                </ul>
+            @endif
         </div>
     </div>
 </nav>
