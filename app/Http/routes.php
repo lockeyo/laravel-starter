@@ -55,6 +55,15 @@ Route::controllers([
     'password' => 'Auth\PasswordController',
 ]);
 
+
+/*
+|--------------------------------------------------------------------------
+| Website Routes / User
+|--------------------------------------------------------------------------
+*/
+Route::get('/home', 'UsersController@dashboard');
+Route::get('/dashboard', 'UsersController@dashboard');
+
 /*
 |--------------------------------------------------------------------------
 | Website Routes / Admin User
@@ -72,7 +81,6 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function() {
     #Route::get('users/{user}/delete', 'Admin\UserController@delete');
     #Route::resource('users', 'Admin\UserController');
 });
-
 
 /*
 |--------------------------------------------------------------------------
