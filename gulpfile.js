@@ -28,7 +28,7 @@ elixir(function(mix) {
 
  // Merge Site scripts.
  mix.scripts([
-  'jquery-2.1.4.min.js',
+  '../../' + paths.jquery + '/jquery.js',
   '../../' + paths.bootstrap + '/js/bootstrap.js',
   'scripts.js'
  ], 'public/js/site.js');
