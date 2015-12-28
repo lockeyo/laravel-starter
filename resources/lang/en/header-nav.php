@@ -8,5 +8,6 @@ return array(
     'contact' => 'Contact',
     'join' => 'Join',
     'login' => 'Login',
+    'logout' => 'Logout',
     'dashboard' => 'Dashboard'
 );
