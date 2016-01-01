@@ -12,24 +12,39 @@
         </div>
 
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav">
-                <li class="{{ (Request::is('/') ? 'active' : '') }}">
-                    <a href="{{ URL::to('') }}">{{ Lang::get('header-nav.home') }}</a>
-                </li>
-                <li class="{{ (Request::is('features') ? 'active' : '') }}">
-                    <a href="{{ URL::to('features') }}">{{ Lang::get('header-nav.features') }}</a>
-                </li>
-                <li class="{{ (Request::is('about') ? 'active' : '') }}">
-                    <a href="{{ URL::to('about') }}">{{ Lang::get('header-nav.about') }}</a>
-                </li>
-                <li class="{{ (Request::is('blog') ? 'active' : '') }}">
-                    <a href="{{ URL::to('blog') }}">{{ Lang::get('header-nav.blog') }}</a>
-                </li>
-                <li class="{{ (Request::is('contact') ? 'active' : '') }}">
-                    <a href="{{ URL::to('contact') }}">{{ Lang::get('header-nav.contact') }}</a>
-                </li>
 
-            </ul>
+            @if(Auth::check())
+                <ul class="nav navbar-nav navbar-left">
+                    <li class="{{ (Request::is('dashboard') ? 'active' : '') }}">
+                        <a href="{{ URL::to('dashboard') }}">{{ Lang::get('header-nav.dashboard') }}</a>
+                    </li>
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="{{ URL::to('auth/logout') }}"><i class="fa fa-sign-out"></i> {{ Lang::get('header-nav.logout') }}</a>
+                    </li>
+                </ul>
+            @else
+                <ul class="nav navbar-nav">
+                    <li class="{{ (Request::is('/') ? 'active' : '') }}">
+                        <a href="{{ URL::to('') }}">{{ Lang::get('header-nav.home') }}</a>
+                    </li>
+                    <li class="{{ (Request::is('features') ? 'active' : '') }}">
+                        <a href="{{ URL::to('features') }}">{{ Lang::get('header-nav.features') }}</a>
+                    </li>
+                    <li class="{{ (Request::is('about') ? 'active' : '') }}">
+                        <a href="{{ URL::to('about') }}">{{ Lang::get('header-nav.about') }}</a>
+                    </li>
+                    <li class="{{ (Request::is('blog') ? 'active' : '') }}">
+                        <a href="{{ URL::to('blog') }}">{{ Lang::get('header-nav.blog') }}</a>
+                    </li>
+                    <li class="{{ (Request::is('contact') ? 'active' : '') }}">
+                        <a href="{{ URL::to('contact') }}">{{ Lang::get('header-nav.contact') }}</a>
+                    </li>
+
+                </ul>
+            @endif
 
             @if(!Auth::check())
                 <ul class="nav navbar-nav navbar-right">
@@ -38,18 +53,6 @@
                     </li>
                     <li class="{{ (Request::is('auth/login/') ? 'active' : '') }}">
                         <a href="{{ URL::to('auth/login/') }}">{{ Lang::get('header-nav.login') }}</a>
-                    </li>
-                </ul>
-            @else
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="{{ (Request::is('dashboard') ? 'active' : '') }}">
-                        <a href="{{ URL::to('dashboard') }}">{{ Lang::get('header-nav.dashboard') }}</a>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="{{ URL::to('auth/logout') }}">{{ Lang::get('header-nav.logout') }}</a></li>
-                        </ul>
                     </li>
                 </ul>
             @endif
