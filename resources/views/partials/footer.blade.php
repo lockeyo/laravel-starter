@@ -12,6 +12,11 @@
     </div>
 
     <div class="container">
+
+        <p class="pull-left">
+            © COPYRIGHT 2016 Company Inc.
+        </p>
+
         <p class="footer-links pull-right">
             <a href="{{ url('jobs')  }}">{{ Lang::get('footer.jobs') }}</a>|
             <a href="{{ url('press')  }}">{{ Lang::get('footer.press') }}</a>|
