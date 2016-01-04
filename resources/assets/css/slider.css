@@ -1,0 +1,29 @@
+.banner ul li{
+    height: 400px;
+}
+
+.banner ul li h1{
+    color: #fff;
+}
+
+.unslider-arrow{
+    display: none;
+}
+
+#slider1 {
+    background: #fff url("../images/slider-1.jpg") no-repeat center center;
+    background-size: cover;
+    width: 100%;
+}
+
+#slider2 {
+    background: #fff url("../images/slider-2.jpg") no-repeat center center;
+    background-size: cover;
+    width: 100%;
+}
+
+#slider3 {
+    background: #fff url("../images/slider-3.jpg") no-repeat center center;
+    background-size: cover;
+    width: 100%;
+}

@@ -4,8 +4,9 @@ var elixir = require('laravel-elixir');
 var paths = {
  'jquery': 'vendor/jquery/dist',
  'bootstrap': 'vendor/bootstrap/dist',
- 'fontawesome': 'vendor/font-awesome'
-};
+ 'fontawesome': 'vendor/font-awesome',
+ 'unslider': 'vendor/unslider/dist'
+}
 
 elixir.config.sourcemaps = false;
 
@@ -22,7 +23,10 @@ elixir(function(mix) {
  mix.styles([
   '../../' + paths.bootstrap + '/css/bootstrap.css',
   '../../' + paths.fontawesome + '/css/font-awesome.css',
+  '../../' + paths.unslider + '/css/unslider.css',
+  '../../' + paths.unslider + '/css/unslider-dots.css',
   'style.css',
+  'slider.css',
   'footer.css'
  ], 'public/css/site.css');
 
@@ -30,6 +34,7 @@ elixir(function(mix) {
  mix.scripts([
   '../../' + paths.jquery + '/jquery.js',
   '../../' + paths.bootstrap + '/js/bootstrap.js',
+  '../../' + paths.unslider + '/js/unslider-min.js',
   'scripts.js'
  ], 'public/js/site.js');
 
