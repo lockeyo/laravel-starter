@@ -29,7 +29,7 @@ Thank you for considering contributing to the Laravel Starter! Just open an pull
 
 ## Security Vulnerabilities
 
-If you discover a security vulnerability within Laravel Starter, please send an e-mail to Marcel Engelmann at mr.marcel.engelmann@gmail.com. All security vulnerabilities will be promptly addressed.
+If you discover a security vulnerability within Laravel Starter, please send an e-mail to Marcel Engelmann at marcel@menux.de. All security vulnerabilities will be promptly addressed.
 
 ### License
 
