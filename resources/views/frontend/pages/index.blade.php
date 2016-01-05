@@ -32,10 +32,24 @@
         </ul>
     </div>
 
-    <div class="container">
-        <h1>Home</h1>
-
-        {{ Lang::get('home.welcome') }}
+    <div class="container" id="me-features-home">
+        <div class="row">
+            <div class="col-md-4">
+                <p class="center"><i class="fa fa-money"></p></i>
+                <h3>Awesome Feature 1</h3>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="col-md-4">
+                <p class="center"><i class="fa fa-line-chart"></p></i>
+                <h3>Awesome Feature 2</h3>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="col-md-4">
+                <p class="center"><i class="fa fa-user"></p></i>
+                <h3>Awesome Feature 3</h3>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+            </div>
+        </div>
     </div>
 @endsection
 
