@@ -27,7 +27,8 @@ elixir(function(mix) {
   '../../' + paths.unslider + '/css/unslider-dots.css',
   'style.css',
   'slider.css',
-  'footer.css'
+  'footer.css',
+  'page-home.css'
  ], 'public/css/site.css');
 
  // Merge Site scripts.
