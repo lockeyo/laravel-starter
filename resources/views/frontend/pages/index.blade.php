@@ -56,6 +56,18 @@
     </section>
     <!-- Features -->
 
+    <!-- Emotion Teaser-->
+    <section id="home-emotion-teaser">
+        <div class="jumbotron">
+            <div class="container">
+                <h3>This is a emotion teaser</h3>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+                <button class="btn btn-lg btn-primary">Do something</button>
+            </div>
+        </div>
+    </section>
+    <!-- Emotion Teaser-->
+
     <!-- Plans -->
     <section id="home-plans">
         <div class="container">
