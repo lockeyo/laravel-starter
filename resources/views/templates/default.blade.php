@@ -33,5 +33,8 @@
 <!-- Scripts -->
 @yield('scripts')
 
+<!-- Analytics -->
+@include('partials.analytics')
+
 </body>
 </html>
