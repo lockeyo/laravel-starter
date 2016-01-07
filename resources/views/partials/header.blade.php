@@ -44,15 +44,13 @@
                     </li>
 
                 </ul>
-            @endif
 
-            @if(!Auth::check())
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="{{ (Request::is('auth/register/') ? 'active' : '') }}">
-                        <a href="{{ URL::to('auth/register/') }}">{{ Lang::get('header-nav.join') }}</a>
+                    <li class="{{ (Request::is('auth/register') ? 'active' : '') }}">
+                        <a href="{{ URL::to('auth/register') }}">{{ Lang::get('header-nav.join') }}</a>
                     </li>
-                    <li class="{{ (Request::is('auth/login/') ? 'active' : '') }}">
-                        <a href="{{ URL::to('auth/login/') }}">{{ Lang::get('header-nav.login') }}</a>
+                    <li class="{{ (Request::is('auth/login') ? 'active' : '') }}">
+                        <a href="{{ URL::to('auth/login') }}">{{ Lang::get('header-nav.login') }}</a>
                     </li>
                 </ul>
             @endif
