@@ -11,8 +11,10 @@
 
 <!-- Content -->
 @section('content')
-    <div class="container">
-        <h1>About</h1>
+    <div class="jumbptrons">
+        <div class="container">
+            <h1>About</h1>
+        </div>
     </div>
 @endsection
 
