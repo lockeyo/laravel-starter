@@ -4,6 +4,12 @@
 
 To be done ...
 
+## Software Packages
+* Bootstrap (http://getbootstrap.com/)
+* jQuery (https://jquery.com/)
+* Font Awesome (https://fortawesome.github.io/Font-Awesome/) 
+* Unslider (http://unslider.com/)
+
 ## Laravel Documentation
 
 http://laravel.com/docs/5.1
