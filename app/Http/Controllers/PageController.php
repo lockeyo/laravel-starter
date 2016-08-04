@@ -16,7 +16,7 @@ class PageController extends Controller
      */
     public function index()
     {
-        return view('frontend.pages.index');
+      return view('frontend.pages.index');
     }
 
     /**
